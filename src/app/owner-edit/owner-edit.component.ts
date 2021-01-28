@@ -3,7 +3,6 @@ import { Subscription } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { OwnerService } from '../shared/owner/owner.service';
 import { CarService } from '../shared/car/car.service';
-import { GiphyService } from '../shared/giphy/giphy.service';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -20,7 +19,6 @@ export class OwnerEditComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute,
     private router: Router,
     private ownerService: OwnerService,
-    private giphyService: GiphyService,
     private carService: CarService) { 
   }
 

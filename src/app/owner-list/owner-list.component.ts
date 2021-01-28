@@ -52,7 +52,6 @@ export class OwnerListComponent implements OnInit {
   removeOwnerCar(dni){
     this.carService.getAll().subscribe(data => {
       this.cars = data._embedded.cars;
-      console.log("cars", this.cars);
       for (const car of this.cars) {
         if(car.ownerDni == dni){
           car.ownerDni = null;
